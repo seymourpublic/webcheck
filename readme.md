@@ -55,7 +55,6 @@ POST /api/check-website
 Example Request Body:
 
 json
-Copy code
 {
   "targetWebsite": "https://example.com",
   "mozAccessId": "your_moz_access_id",
@@ -65,7 +64,6 @@ Copy code
 Example Response:
 
 json
-Copy code
 {
   "domainAuthority": 80,
   "contentAnalysis": "The website content is...",
@@ -86,6 +84,3 @@ This project is licensed under the MIT License.
 Acknowledgments
 Thanks to the contributors who made this project possible.
 vbnet
-Copy code
-
-This README template covers essential sections such as an overview, features, get
