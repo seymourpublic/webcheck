@@ -23,7 +23,7 @@ The Website Check Application is a tool for analyzing websites, checking domain 
 
 ### 1. Clone the repository:
 
-   ```bash
+  
    git clone https://github.com/your-username/website-check.git
 
 ### Navigate to the project directory:
@@ -35,7 +35,7 @@ npm install
 
 ## Create a .env file in the project root and add your configuration:
 
-env
+.env
 
 MONGODB_URI=mongodb://localhost:27017/website-checks
 MOZ_ACCESS_ID=your_moz_access_id
@@ -44,8 +44,6 @@ OPENAI_API_KEY=your_openai_api_key
 Usage
 Start the application:
 
-bash
-Copy code
 npm start
 The application will be accessible at http://localhost:3000.
 
@@ -55,7 +53,6 @@ POST /api/check-website
 Example Request Body:
 
 json
-Copy code
 {
   "targetWebsite": "https://example.com",
   "mozAccessId": "your_moz_access_id",
@@ -65,7 +62,6 @@ Copy code
 Example Response:
 
 json
-Copy code
 {
   "domainAuthority": 80,
   "contentAnalysis": "The website content is...",
@@ -86,6 +82,3 @@ This project is licensed under the MIT License.
 Acknowledgments
 Thanks to the contributors who made this project possible.
 vbnet
-Copy code
-
-This README template covers essential sections such as an overview, features, get
