@@ -7,9 +7,11 @@
     "express-rate-limit": "^7.1.5",
     "express-validator": "^7.0.1",
     "memory-cache": "^0.2.0",
+    "mongodb": "^6.3.0",
     "mongoose": "^8.0.2",
     "nock": "^13.4.0",
     "robots-txt-parser": "^2.0.3",
+    "spamscanner": "^5.1.5",
     "tldjs": "^2.3.1",
     "winston": "^3.11.0"
   },
@@ -18,7 +20,7 @@
     "supertest": "^6.3.3"
   },
   "scripts": {
-    "start": "node app.js",
+    "start": "node src/app.js",
     "test": "jest"
   }
 }

@@ -1,8 +1,13 @@
 const mongoose = require('mongoose');
-const logger = require('./utils/logger');
+const logger = require('../utils/logger');
 
 const connectToDatabase = () => {
-  const databaseUrl = process.env.MONGODB_URI;
+  const databaseUrl = process.env.MONGODB_URI ;
+
+  if (!databaseUrl) {
+    logger.error('MONGODB_URI is not defined.');
+    return;
+  }
 
   mongoose.connect(databaseUrl, { useNewUrlParser: true, useUnifiedTopology: true });
   const db = mongoose.connection;

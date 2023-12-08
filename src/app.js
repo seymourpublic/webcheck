@@ -1,8 +1,11 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const { connectToDatabase } = require('./db');
-const websiteCheckRouter = require('./routes/websiteCheck');
-const errorHandler = require('./middleware/errorHandler');
+const websiteCheckRouter = require('../routes/websiteCheck');
+const errorHandler = require('../middleware/errorHandler');
+const cacheMiddleware = require('../middleware/cache');
+const rateLimiter = require('../middleware/rateLimit');
 
 const app = express();
 const port = process.env.PORT || 3000;
