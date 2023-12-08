@@ -35,7 +35,7 @@ npm install
 
 ## Create a .env file in the project root and add your configuration:
 
-env
+.env
 
 MONGODB_URI=mongodb://localhost:27017/website-checks
 MOZ_ACCESS_ID=your_moz_access_id
@@ -44,7 +44,6 @@ OPENAI_API_KEY=your_openai_api_key
 Usage
 Start the application:
 
-Copy code
 npm start
 The application will be accessible at http://localhost:3000.
 
