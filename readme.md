@@ -23,7 +23,7 @@ The Website Check Application is a tool for analyzing websites, checking domain 
 
 ### 1. Clone the repository:
 
-   ```bash
+  
    git clone https://github.com/your-username/website-check.git
 
 ### Navigate to the project directory:
@@ -44,7 +44,6 @@ OPENAI_API_KEY=your_openai_api_key
 Usage
 Start the application:
 
-bash
 Copy code
 npm start
 The application will be accessible at http://localhost:3000.
